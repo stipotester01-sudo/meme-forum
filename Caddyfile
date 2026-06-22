@@ -1,9 +1,11 @@
 {
+	admin off
+	persist_config off
 	frankenphp
 	auto_https off
 }
 
-:{$PORT:80} {
+http://:{$PORT:80} {
 	root * /app/public
 	encode gzip
 
